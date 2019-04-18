@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo1" />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/Gray"
+        android:textColor="@color/White"
+        android:hint="UserName"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="200dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/Gray"
+        android:textColor="@color/White"
+        android:hint="Password"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_marginTop="270dp"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="60dp"
+        android:background="@color/Black"
+        android:textColor="@color/White"
+        android:onClick="userLogin"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="Log In"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="60dp"
+        android:background="@color/GreenLight"
+        android:textColor="@color/Black"
+        android:onClick="searchProduct"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="View Product"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
